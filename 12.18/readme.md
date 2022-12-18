@@ -1,39 +1,15 @@
-Puzzle
-If you don't know who Waldo is, he's a nice guy who likes to be in crowded places. But he's also a bit odd as he always likes to hide in plain sight. Can you spot Waldo in the crowd?
+# [Remove the minimum](https://www.codewars.com/kata/563cf89eb4747c5fb100001b/)
+## The museum of incredible dull things
+The museum of incredible dull things wants to get rid of some exhibitions. Miriam, the interior architect, comes up with a plan to remove the most boring exhibitions. She gives them a rating, and then removes the one with the lowest rating.
 
-Task
-Given crowd, an array of strings of equal length, representing a crowded place, return an array with two integers representing the coordinates [y, x] where Waldo can be found ([0, 0] is top-left, y being the row and x being the column ).
+However, just as she finished rating all exhibitions, she's off to an important fair, so she asks you to write a program that tells her the ratings of the items after one removed the lowest one. Fair enough.
+
+### Task
+Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with a lower index. If you get an empty array/list, return an empty array/list.
+
+Don't change the order of the elements that are left.
 
 Examples
-We've spotted Waldo a couple of times in the past. Below is what we found out. Note that he's been in much more crowded places lately.
-
-#1 Waldo at the beach
-```
-"             "       Air
-"         w   "       Air with a bird
-"   w         "       Air with a bird
-"~~~~~~~~~~~~~"       Sea
-".~..~~.~~~..~"       Waves on beach
-"...P......P.."       Beach with some people
-"......P..P..."       Beach with some people
-"..PW........."       Beach with Waldo and presumably a friend next to him
-```
-Unredacted report: Waldo can be found at [7, 3], wearing his usual outfit
-
-#2 Waldo visiting the Great Pyramid
-```
-"                              "       Air
-"                              "       Air
-"            _                 "       Top of pyramid
-"          _____               "       Layer of pyramid
-"        _________             "       Layer of pyramid
-"  B  _______________   G   GG "       Ground layer of pyramid with several people, including Waldo
-```
-
-Unredacted report: Waldo can be found at [5, 2], wearing special clothes protecting him from the sun
-
-Hints
-- he isn't always wearing his usual clothes
-
-- why is there more than one bird in the first example ...
-
+* Input: [1,2,3,4,5], output = [2,3,4,5]
+* Input: [5,3,2,1,4], output = [5,3,2,4]
+* Input: [2,2,1,2,1], output = [2,2,2,1]
